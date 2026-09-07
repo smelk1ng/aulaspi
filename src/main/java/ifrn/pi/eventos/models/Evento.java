@@ -11,12 +11,12 @@ public class Evento {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-    private String nome;
-    private String local;
-    private String data;
-    private String horario;
-    
-    public Long getId() {
+	private String nome;
+	private String local;
+	private String data;
+	private String horario;
+
+	public Long getId() {
 		return id;
 	}
 
@@ -24,44 +24,42 @@ public class Evento {
 		this.id = id;
 	}
 
-	public String getNome()  { 
-    	return nome;
-    }
+	public String getNome() {
+		return nome;
+	}
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
 
-    public String getLocal() {
-        return local;
-    }
+	public String getLocal() {
+		return local;
+	}
 
-    public void setLocal(String local) {
-        this.local = local;
-    }
+	public void setLocal(String local) {
+		this.local = local;
+	}
 
-    public String getData() {
-        return data;
-    }
+	public String getData() {
+		return data;
+	}
 
-    public void setData(String data) {
-        this.data = data;
-    }
+	public void setData(String data) {
+		this.data = data;
+	}
 
-    public String getHorario() {
-        return horario;
-    }
+	public String getHorario() {
+		return horario;
+	}
 
-    public void setHorario(String horario) {
-        this.horario = horario;
-    }
+	public void setHorario(String horario) {
+		this.horario = horario;
+	}
 
 	@Override
 	public String toString() {
 		return "Evento [id=" + id + ", nome=" + nome + ", local=" + local + ", data=" + data + ", horario=" + horario
 				+ "]";
 	}
-    
-    
-    
+
 }
